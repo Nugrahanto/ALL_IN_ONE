@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,6 +26,8 @@ public class MovieDetailActivity extends AppCompatActivity {
 
     private static final String URL_DATA = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?api-key=b300ba73118449c6be1b3fbb4107e604";
     public TextView textViewHeadet;
+    public TextView textViewByet;
+    public TextView textViewDateet;
     public TextView textViewDescet;
     public ImageView imageViewDetail;
     private Integer mPostkey = null;
@@ -52,9 +55,19 @@ public class MovieDetailActivity extends AppCompatActivity {
 //        });
 
         textViewHeadet = (TextView) findViewById(R.id.textViewHead);
+        textViewByet = (TextView) findViewById(R.id.textViewBy);
+        textViewDateet = (TextView) findViewById(R.id.textViewDate);
         textViewDescet = (TextView) findViewById(R.id.textViewDesc);
 //        textViewReview = (TextView) findViewById(R.id.textViewReview);
         imageViewDetail = (ImageView) findViewById(R.id.imageViewDetail);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
 
@@ -77,6 +90,8 @@ public class MovieDetailActivity extends AppCompatActivity {
                             setTitle("");
 
                             textViewHeadet.setText(o.getString("display_title"));
+                            textViewByet.setText(o.getString("byline"));
+                            textViewDateet.setText(o.getString("publication_date"));
                             textViewDescet.setText(o.getString("summary_short"));
 //                            url = o.getJSONObject("link").getString("url");
 

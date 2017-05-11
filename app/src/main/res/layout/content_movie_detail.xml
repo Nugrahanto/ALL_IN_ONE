@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Movie.MovieDetailActivity"
     tools:showIn="@layout/activity_movie_detail">
@@ -13,20 +14,58 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/colorToolbar"
+            android:max="5"
+            android:progressBackgroundTint="@color/colorToolbar"
+            android:rating="3.5"
+            android:scaleX=".8"
+            android:scaleY=".8" />
+
         <TextView
             android:id="@+id/textViewHead"
             style="@style/Base.TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="Head" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Head"
+            android:textColor="@color/colorWt" />
+
+        <TextView
+            android:id="@+id/textViewBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="By"
+            android:textColor="@color/colorWt"
+            android:textSize="6pt" />
 
         <TextView
             android:id="@+id/textViewDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
             android:layout_margin="@dimen/text_margin"
-            android:text="Deskripsi" />
+            android:text="Deskripsi"
+            android:textColor="@color/colorWt" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="0000-00-00"
+            android:textColor="@color/colorWt"
+            android:textSize="6pt" />
 
     </LinearLayout>
 
