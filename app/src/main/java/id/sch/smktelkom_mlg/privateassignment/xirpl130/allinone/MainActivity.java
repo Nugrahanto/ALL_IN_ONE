@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Movie.MovieFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Technology.TechnologyFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_technology) {
 
-//            fragment = new TechnologyFragment();
+            fragment = new TechnologyFragment();
             setTitle("Techology");
 
         } else if (id == R.id.nav_politics) {

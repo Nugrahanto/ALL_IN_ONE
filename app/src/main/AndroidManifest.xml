@@ -25,6 +25,10 @@
             android:name=".Movie.MovieDetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Technology.TechnologyDetailActivity"
+            android:label="@string/title_activity_technology_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
