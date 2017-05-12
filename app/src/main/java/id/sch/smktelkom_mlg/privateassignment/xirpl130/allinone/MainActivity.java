@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Movie.MovieFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Politics.PoliticsFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.allinone.Technology.TechnologyFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -61,6 +62,9 @@ public class MainActivity extends AppCompatActivity
             setTitle("Techology");
 
         } else if (id == R.id.nav_politics) {
+
+            fragment = new PoliticsFragment();
+            setTitle("Politics");
 
         } else if (id == R.id.nav_business) {
 

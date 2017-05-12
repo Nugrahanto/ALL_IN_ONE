@@ -14,15 +14,15 @@
         <menu>
             <item
                 android:id="@+id/nav_technology"
-                android:icon="@drawable/ic_menu_gallery"
+                android:icon="@drawable/ic_developer_board_black_24dp"
                 android:title="Technology" />
             <item
                 android:id="@+id/nav_politics"
-                android:icon="@drawable/ic_menu_gallery"
+                android:icon="@drawable/ic_person_black_24dp"
                 android:title="Politics" />
             <item
                 android:id="@+id/nav_business"
-                android:icon="@drawable/ic_menu_gallery"
+                android:icon="@drawable/ic_euro_symbol_black_24dp"
                 android:title="Business" />
         </menu>
     </item>
